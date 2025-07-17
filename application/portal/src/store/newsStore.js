@@ -1,8 +1,8 @@
-import create from 'zustand';
+import { create } from "zustand";
 
 const useNewsStore = create((set) => ({
-  articles: [],
-  setArticles: (newArticles) => set({ articles: newArticles }),
+  news: [],
+  setNews: (news) => set({ news }),
 }));
 
 export default useNewsStore;
